@@ -5,7 +5,7 @@ type Source struct {
 	// Name is the filename of the source
 	Name string
 	// Input is the actual contents of the source file
-	Input string
+	Input string `yaml:"-"`
 	// BuiltIn indicate whether the source is a part of the specification
 	BuiltIn bool
 }
